@@ -6,7 +6,7 @@
           <v-card class="loader" height="160" color="secondary" theme="dark">
           </v-card>
         </v-col>
-        <v-col v-else cols="4" v-for="i of this.list.results" id="{{i.name}}">
+        <v-col v-else cols="4" v-for="i of this.list.results">
           <v-card height="160" color="transparent" theme="dark">
             <div class="d-flex flex-no-wrap justify-space-between">
               <div class="d-flex flex-column align-start">
@@ -45,13 +45,12 @@
               </div>
 
               <v-avatar class="ma-3" size="125" rounded="0">
-                <v-img
-                  :src="
-                    'src/assets/list-img/' + listType + '/' + i.name + '.jpeg'
-                  "
-                >
+                <v-img :src="'/public/assets/list-img/' + listType + '/' + i.name + '.jpeg'">
+                <!-- <v-img :src="require('public/assets/list-img/' + listType + '/' + i.name + '.jpeg')"> -->
                   <template v-slot:error>
-                    <v-img :src="'src/assets/no-image.png'"></v-img>
+                    <v-img :src="'/public/assets/no-image.png'">
+                    <!-- <v-img :src="require('public/assets/no-image.png')"> -->
+                    </v-img>
                   </template>
                 </v-img>
               </v-avatar>
@@ -62,19 +61,13 @@
           <v-card color="secondary" theme="dark">
             <v-card-text>
               <v-row class="py-6">
-                <v-img
-                  width="600"
-                  height="400"
-                  :src="
-                    'src/assets/list-img/' +
-                    listType +
-                    '/' +
-                    currentData.name +
-                    '.jpeg'
-                  "
-                >
+                <v-img width="600" height="400" :src="'/public/assets/list-img/' + listType + '/' + currentData.name + '.jpeg'">
+                <!-- <v-img width="600" height="400" :src="require('public/assets/list-img/' + listType + '/' + currentData.name + '.jpeg')"> -->
+
                   <template v-slot:error>
-                    <v-img :src="'src/assets/no-image.png'"></v-img>
+                    <v-img :src="'/public/assets/no-image.png'">
+                    <!-- <v-img :src="require('public/assets/no-image.png')"> -->
+                    </v-img>
                   </template>
                 </v-img>
               </v-row>
