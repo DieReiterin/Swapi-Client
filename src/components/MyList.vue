@@ -45,10 +45,10 @@
               </div>
 
               <v-avatar class="ma-3" size="125" rounded="0">
-                <v-img :src="'/public/assets/' + i.name + '.jpeg'">
+                <v-img :src="'assets/' + i.name + '.jpeg'">
                 <!-- <v-img :src="require('public/assets/list-img/' + listType + '/' + i.name + '.jpeg')"> -->
                   <template v-slot:error>
-                    <v-img :src="'/public/assets/no-image.png'">
+                    <v-img :src="'assets/no-image.png'">
                     <!-- <v-img :src="require('public/assets/no-image.png')"> -->
                     </v-img>
                   </template>
@@ -61,11 +61,11 @@
           <v-card color="secondary" theme="dark">
             <v-card-text>
               <v-row class="py-6">
-                <v-img width="600" height="400" :src="'/public/assets/' + currentData.name + '.jpeg'">
+                <v-img width="600" height="400" :src="'assets/' + currentData.name + '.jpeg'">
                 <!-- <v-img width="600" height="400" :src="require('public/assets/list-img/' + listType + '/' + currentData.name + '.jpeg')"> -->
 
                   <template v-slot:error>
-                    <v-img :src="'/public/assets/no-image.png'">
+                    <v-img :src="'assets/no-image.png'">
                     <!-- <v-img :src="require('public/assets/no-image.png')"> -->
                     </v-img>
                   </template>
