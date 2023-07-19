@@ -21,6 +21,5 @@
 .header {
   height: 100px;
   margin-bottom: 20px;
-  /* background: linear-gradient(rgba(0, 0, 255, 0.5), blue, transparent); */
 }
 </style>
