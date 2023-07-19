@@ -45,11 +45,9 @@
               </div>
 
               <v-avatar class="ma-3" size="125" rounded="0">
-                <v-img :src="'public/' + i.name + '.jpeg'">
-                <!-- <v-img :src="require('public/assets/list-img/' + listType + '/' + i.name + '.jpeg')"> -->
+                <v-img :src="'public/assets/' + listType + '/' + i.name + '.jpeg'">
                   <template v-slot:error>
-                    <v-img :src="'public/no-image.png'">
-                    <!-- <v-img :src="require('public/assets/no-image.png')"> -->
+                    <v-img :src="'public/assets/no-image.png'">
                     </v-img>
                   </template>
                 </v-img>
@@ -61,12 +59,10 @@
           <v-card color="secondary" theme="dark">
             <v-card-text>
               <v-row class="py-6">
-                <v-img width="600" height="400" :src="'public/' + currentData.name + '.jpeg'">
-                <!-- <v-img width="600" height="400" :src="require('public/assets/list-img/' + listType + '/' + currentData.name + '.jpeg')"> -->
+                <v-img width="600" height="400" :src="'public/assets/' + listType + '/' + currentData.name + '.jpeg'">
 
                   <template v-slot:error>
-                    <v-img :src="'public/no-image.png'">
-                    <!-- <v-img :src="require('public/assets/no-image.png')"> -->
+                    <v-img :src="'public/assets/no-image.png'">
                     </v-img>
                   </template>
                 </v-img>
@@ -82,8 +78,7 @@
                 <v-card-text class="text-h4 px-2 pb-5 text-left" >
                     About
                   </v-card-text>
-                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
+
                 <v-card-text v-for="m of currentData"
                   width="400"
                   height="50"
@@ -92,8 +87,6 @@
                 </v-card-text>
                 </v-col>
               </v-row>
-              <!-- <v-avatar class="ma-3" size="125" rounded="0"> -->
-              <!-- </v-avatar> -->
             </v-card-text>
             <v-card-actions>
               <v-btn color="primary" block @click="showDialog = false"
@@ -106,17 +99,6 @@
     </v-container>
   </v-window-item>
 
-  <!-- <v-window-item> -->
-  <!-- <div class="text-center"> -->
-  <!-- <v-btn
-      color="primary"
-      @click="modalShow = true"
-    >
-      Open Dialog
-    </v-btn> -->
-
-  <!-- </div> -->
-  <!-- </v-window-item> -->
 </template>
 
 <script>
