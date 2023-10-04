@@ -1,30 +1,44 @@
 <template>
-   <!-- <v-dialog
-            :value="modalData > 0"
-            @input="modalData = $event.target.value"
-            width="auto"
-            height="auto"
-          >
-            <v-card color="secondary" theme="dark">
-              <v-card-text>
-                <v-avatar class="ma-3" size="125" rounded="0">
-                      <v-img
-                        :src="
-                          'src/assets/list-img/' + listType + '/' + modalData.name + '.jpeg'
-                        "
-                      >
-                        <template v-slot:error>
-                          <v-img :src="'src/assets/no-image.png'"></v-img>
-                        </template>
-                      </v-img>
-                    </v-avatar>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </v-card-text>
-              <v-card-actions>
-                <v-btn color="primary" block @click="modalShow = false">Back</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog> -->
+   <v-dialog v-model="showDialog" width="1000" height="auto">
+          <v-card color="secondary" theme="dark">
+            <v-card-text>
+              <v-row class="py-6">
+                <v-img width="600" height="400" :src="'assets/' + listType + '/' + currentData.name + '.jpeg'">
+
+                  <template v-slot:error>
+                    <v-img :src="'assets/no-image.png'">
+                    </v-img>
+                  </template>
+                </v-img>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-card-text class="text-h4 px-2 pb-0 text-center">
+                    {{ currentData.name }}
+                  </v-card-text>
+                  <v-col>
+
+                </v-col>
+                <v-card-text class="text-h4 px-2 pb-5 text-left" >
+                    About
+                  </v-card-text>
+
+                <v-card-text v-for="m of currentData"
+                  width="400"
+                  height="50"
+                  class="text-subtitle-2 px-3 py-1 text-left"
+                >{{ m }}
+                </v-card-text>
+                </v-col>
+              </v-row>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn color="primary" block @click="showDialog = false"
+                >Back</v-btn
+              >
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
 </template>
 
 <script>

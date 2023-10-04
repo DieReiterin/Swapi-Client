@@ -27,7 +27,7 @@ export default {
 
 <style>
 .container {
-  background: navy url("background__main.jpeg") no-repeat center center / cover fixed;
+  background: navy url("assets/background__main.jpeg") no-repeat center center / cover fixed;
 }
 
 

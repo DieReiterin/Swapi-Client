@@ -55,11 +55,12 @@
             </div>
           </v-card>
         </v-col>
-        <v-dialog v-model="showDialog" width="1000" height="auto">
+        <!-- <my-dialog></my-dialog> -->
+        <v-dialog v-model="showDialog" width="1000" height="auto">                                                <!-- -->
           <v-card color="secondary" theme="dark">
             <v-card-text>
               <v-row class="py-6">
-                <v-img width="600" height="400" :src="'assets/' + listType + '/' + currentData.name + '.jpeg'">
+                <v-img width="600" height="400" :src="'assets/' + listType + '/' + currentData.name + '.jpeg'">  <!-- -->
 
                   <template v-slot:error>
                     <v-img :src="'assets/no-image.png'">
