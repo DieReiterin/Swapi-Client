@@ -1,5 +1,5 @@
-# Энциклопедия по вселенной Star Wars на открытом API 
-(https://swapi.dev/)
+# Энциклопедия по вселенной Star Wars
+на открытом API (https://swapi.dev/)
 
 ![Swapi-Client](https://github.com/DieReiterin/Swapi-Client/blob/main/public/assets/swapiClient.png)
 
