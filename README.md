@@ -1,5 +1,7 @@
-# Энциклопедия по вселенной Star Wars на открытом API (https://swapi.dev/)
+# Энциклопедия по вселенной Star Wars на открытом API 
+(https://swapi.dev/)
 
+![Swapi-Client](https://github.com/DieReiterin/Swapi-Client/blob/main/public/assets/swapiClient.png)
 
 ## Демо
 https://swapi-client-pied.vercel.app/
@@ -9,4 +11,3 @@ https://swapi-client-pied.vercel.app/
 #### `npm start`
 #### `http://localhost:3000/`
 
-![CropperStock](https://github.com/DieReiterin/Swapi-Client/blob/main/public/assets/swapiClient.png)
