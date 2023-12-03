@@ -1,3 +1,4 @@
+# Pet #3
 # Энциклопедия по вселенной Star Wars
 на открытом API (https://swapi.dev/)
 
